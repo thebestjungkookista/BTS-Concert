@@ -19,10 +19,16 @@ body {
 .section {
   display: none;
   padding: 20px;
+
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .active {
-  display: block;
+  display: flex;
 }
 
 /* Vinilo */
@@ -250,7 +256,7 @@ function next(id) {
 
 function selectBias(name){
   bias = name;
-  console.log("Elegiste:", name); // 👈 para verificar
+  console.log("Elegiste:", name); // 
 }
 </script>
 
